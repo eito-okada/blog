@@ -1,0 +1,6 @@
+.blog .about .contact{
+    display: inline-block;
+    width: calc(100vw / 3);
+    height: 100vh;
+    outline: 2px solid black;
+}
