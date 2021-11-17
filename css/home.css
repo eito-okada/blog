@@ -1,6 +1,90 @@
-.blog .about .contact{
-    display: inline-block;
+html, body {
+    margin: 0px;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+a:link {color :black; text-decoration: none;}
+a:visited {color :black; text-decoration: none;}
+a:hover {color :black; text-decoration: none;}
+a:active {color :black; text-decoration: none;}
+
+.menu {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vh;
+}
+
+.blog, .blog a {
     width: calc(100vw / 3);
     height: 100vh;
-    outline: 2px solid black;
+    background-color: #1F75FE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.about, .about a {
+    width: calc(100vw / 3);
+    height: 100vh;
+    background-color: #1CAC78;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact, .contact a  {
+    width: calc(100vw / 3);
+    height: 100vh;
+    background-color: #EE204E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3vh;
+        flex-direction: column;
+    }
+    
+    .blog, .blog a {
+        width: 100vw;
+        height: calc(100vh / 3);
+        background-color: #1F75FE;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .about, .about a {
+        width: 100vw;
+        height: calc(100vh / 3);
+        background-color: #1CAC78;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .contact, .contact a  {
+        width: 100vw;
+        height: calc(100vh / 3);
+        background-color: #EE204E;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
 }
