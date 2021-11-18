@@ -1,19 +1,25 @@
 html, body {
     margin: 0px;
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", sans-serif;;
 }
 
-a:link {color: black; text-decoration: none;}
-a:visited {color: black; text-decoration: none;}
-a:hover {color: black; text-decoration: none;}
-a:active {color: black; text-decoration: none;}
+a:link {color: white; text-decoration: none;}
+a:visited {color: white; text-decoration: none;}
+a:hover {color: white; text-decoration: none;}
+a:active {color: white; text-decoration: none;}
+
+.mix-blend-mode body {
+    color: white;
+}
 
 .header {
     height: 10vh;
-    outline: 1px solid black;
     display: flex;
     flex-direction: row;
     position: fixed;
+    top: 0px;
+    background-color: #1e3d58;
+    z-index: 1;
 }
 
 .logo {
@@ -31,4 +37,35 @@ a:active {color: black; text-decoration: none;}
     width: 80vw;
     justify-content: space-around;
     align-items: center;
+}
+
+.main {
+    position: relative;
+    top: 10vh;
+}
+
+.aboutme {
+    height: 90vh;
+    background-color: #057dcd;
+}
+
+.aboutme p {
+    margin: 0px;
+    font-size: 10vh;
+    z-index: 0;
+    position: fixed;
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    mix-blend-mode: overlay;
+}
+
+.aboutblog {
+    height: 200vh;
+    background-color: #43b0f1;
+    z-index: 0.5;
 }
