@@ -7,6 +7,7 @@ $(function(){
         $('#fade2').fadeIn();
         $('.fade').fadeOut();
       } else{
+
         $('.fade2').fadeOut();
         $('.fade').fadeIn();
       }
