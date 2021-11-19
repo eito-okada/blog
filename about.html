@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 <body>
     <div class="header">
@@ -24,17 +26,36 @@
     </div>
     <div class="main">
         <div class="aboutme">
-            <p>
+            <p class="fade" id="fade">
                 Hello, my name is Eito Okada.
                 <br>
-                I am a middle schooler from Japan.
+                I am a Japanese 13-year old.
+                <br>
+                    <a href="http://eito-okada.github.io/about/Homepage/html/home.html" target="_blank">More about me
+                    <i class="fas fa-external-link-alt"></i></a>
             </p>
         </div>
-        <div class="aboutblog">
-
+        <div id="demo01__area" class="js-demo01-area"></div>
+        <div class="fadearea"></div>
+            <p class="aboutblog">
+                I made this blog because I wanted to write about my daily life,
+                <br>
+                and because I wanted to use my coding skills.
+                <br>
+                I will be uploading post 2-3 times a week.
+                Enjoy!
+                <span class="fade2" id="fade2">
+                    <a href="/blog.html">Visit the blog <i class="fas fa-external-link-alt"></i></a>
+                </span>
+            </p>
         </div>
     </div>
-    <div class="footer"></div>
+    <div class="footer">
+        <div class="footer-logo">
+            <a href=""><img src="" alt=""></a>
+        </div>
+    </div>
 </body>
 <script src="/js/about.js"></script>
+<script src="/js/fadeout.js"></script>
 </html>

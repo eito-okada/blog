@@ -3,6 +3,10 @@ html, body {
     font-family: "Roboto", sans-serif;;
 }
 
+p {
+    margin: 0px;
+}
+
 a:link {color: white; text-decoration: none;}
 a:visited {color: white; text-decoration: none;}
 a:hover {color: white; text-decoration: none;}
@@ -49,9 +53,9 @@ a:active {color: white; text-decoration: none;}
     background-color: #057dcd;
 }
 
-.aboutme p {
+.fade{
     margin: 0px;
-    font-size: 10vh;
+    font-size: 8vh;
     z-index: 0;
     position: fixed;
     height: 90vh;
@@ -62,10 +66,37 @@ a:active {color: white; text-decoration: none;}
     align-content: center;
     text-align: center;
     mix-blend-mode: overlay;
+    flex-direction: column;
+}
+
+.fade a {
+    display: inline-block;
+    font-size: 4vh;
+}
+
+.fadearea {
+    height: 50vh;
+    background-color: #43b0f1;
 }
 
 .aboutblog {
-    height: 200vh;
+    height: 90vh;
     background-color: #43b0f1;
-    z-index: 0.5;
+}
+
+.aboutblog {
+    height: 90vh;
+    width: 100vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    flex-direction: column;
+    font-size: 4vh;
+}
+
+.fade2 {
+    font-size: 3vh;
 }
