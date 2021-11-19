@@ -92,14 +92,15 @@ a:active {
 }
 
 .fadearea {
-    height: 80vh;
+    height: 90vh;
     background-color: #43b0f1;
 }
 
 .aboutblog {
     height: 90vh;
-    background-color: #43b0f1;
-    position: sticky;
+    background-color: #057dcd;
+    position: fixed;
+    z-index: -1;
     top: 10vh;
     width: 100vw;
 }
@@ -112,9 +113,9 @@ a:active {
     justify-content: center;
     align-items: center;
     align-content: center;
-    text-align: centerc;
     flex-direction: column;
     font-size: 4vh;
+    z-index: -1;
 }
 
 .fade2 {
@@ -122,9 +123,12 @@ a:active {
 }
 
 .footer {
+    position: relative;
+    top: 100vh;
+    width: 100vw;
     z-index: 0.2;
     height: 90vh;
-    background-color: #057dcd;
+    background-color: #43b0f1;
 }
 
 .footer-logo {
