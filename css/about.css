@@ -2,7 +2,7 @@ html,
 body {
     margin: 0px;
     font-family: "Roboto", sans-serif;
-    scroll-snap-type: mandatory;
+    scroll-snap-type: y mandatory;
     scroll-snap-stop: always;
 }
 
@@ -64,14 +64,14 @@ a:active {
 .main {
     position: relative;
     top: 10vh;
-    scroll-snap-type: mandatory;
+    scroll-snap-type: y mandatory;
     scroll-snap-stop: always;
 }
 
 .aboutme {
     height: 90vh;
     background-color: #057dcd;
-    scroll-snap-align: start;
+    scroll-snap-align: end;
 }
 
 .fade {
@@ -98,13 +98,10 @@ a:active {
 .fadearea {
     height: 100vh;
     background-color: #43b0f1;
-    scroll-snap-align: start;
+    scroll-snap-align: end;
 }
 
-.transparent {
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0);
-    width: 100vw;
+.scrollsnap {
     scroll-snap-align: start;
 }
 
@@ -127,22 +124,25 @@ a:active {
     align-content: center;
     flex-direction: column;
     font-size: 4vh;
-    z-index: -1;
+    z-index: -0.1;
 }
 
 .fade2 {
     font-size: 3vh;
+    z-index: 0;
 }
 
 .footer {
+    top: 100vh;
     position: relative;
+    scroll-snap-align: end;
     width: 100vw;
-    z-index: 0.2;
     height: 90vh;
     background-color: #43b0f1;
-    scroll-snap-align: start;
 }
 
 .footer-logo {
     font-size: 4vh;
+    width: 100vw;
+    text-align: center;
 }
