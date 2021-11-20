@@ -4,4 +4,3 @@ if('CSS' in window && 'supports' in window.CSS) {
     support = support?'mix-blend-mode':'no-mix-blend-mode';
 document.documentElement.className += support;
 }
-
