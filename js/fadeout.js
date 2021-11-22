@@ -9,4 +9,20 @@ $(function(){
         $('.fade').fadeIn();
       }
     });
+    var footerscroll = $('#aboutblog').offset().top;
+    var footerdistance = 0;
+    $(document).scroll(function() {
+      footerdistance = $(this).scrollTop();
+      if (footerscroll <= footerdistance) {
+        $('.footer-logo').css({
+          transform: 'scale(1.5)',
+          transition: '0.3s ease'
+        })
+      } else {
+        $('.footer-logo').css( {
+          transform:'scale(1)',
+          transition: '0.2s ease'
+        })
+      }
+    })
   });

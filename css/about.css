@@ -133,7 +133,7 @@ a:active {
 }
 
 .footer-logo {
-    font-size: 5vh;
+    font-size: 6vh;
     width: 100vw;
     text-align: center;
     height: 10vh;
@@ -142,4 +142,44 @@ a:active {
     align-items: center;
     position: sticky;
     top: 30vh;
+    transition-delay: 0s;
+}
+
+.footer-social {
+    position: relative;
+    width: 100vw;
+    top: 30vh;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-social ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    justify-content: space-evenly;
+    padding: 0px;
+    margin: 0px;
+}
+
+.footer-social img {
+    height: 5vh;
+}
+
+.footer-link {
+    position: relative;
+    top: 35vh;
+    font-size: 4vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-link ul {
+    width: 50vw;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
