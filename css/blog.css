@@ -1,0 +1,60 @@
+html,
+body {
+    margin: 0px;
+    font-family: "Roboto", sans-serif;
+}
+
+p {
+    margin: 0px;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+a:active {
+    color: white;
+    text-decoration: none;
+}
+
+.header {
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0px;
+    background-color: #1e3d58;
+    z-index: 1;
+}
+
+.logo {
+    font-size: 6vh;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+}
+
+.navbar {
+    display: flex;
+    height: 10vh;
+    width: 80vw;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbartab:hover {
+    mix-blend-mode: soft-light;
+}
