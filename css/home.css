@@ -47,15 +47,15 @@ a:active {color: white; text-decoration: none;}
 }
 
 .blog {
-    background-image: url("/public/blue-eito.gif");
+    background-image: url("../public/blue-eito.gif");
 }
 
 .about {
-    background-image: url("/public/green-eito.gif");
+    background-image: url("../public/green-eito.gif");
 }
 
 .contact {
-    background-image: url("/public/red-eito.gif");
+    background-image: url("../public/red-eito.gif");
 }
 
 .blog:hover {

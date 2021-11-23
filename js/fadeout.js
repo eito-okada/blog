@@ -16,12 +16,12 @@ $(function(){
       if (footerscroll <= footerdistance) {
         $('.footer-logo').css({
           transform: 'scale(1.5)',
-          transition: '0.3s ease'
+          transition: '1s ease'
         })
       } else {
         $('.footer-logo').css( {
           transform:'scale(1)',
-          transition: '0.2s ease'
+          transition: '1s ease-in-out'
         })
       }
     })

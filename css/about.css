@@ -61,6 +61,10 @@ a:active {
     align-items: center;
 }
 
+.navbartab:hover {
+    mix-blend-mode: soft-light;
+}
+
 .main {
     position: relative;
     top: 10vh;
@@ -165,6 +169,13 @@ a:active {
 
 .footer-social img {
     height: 5vh;
+    transform: scale(1);
+    transition: 0.4s;
+}
+
+.footer-social img:hover {
+    transform: scale(1.2);
+    transition: 0.4s;
 }
 
 .footer-link {
@@ -176,10 +187,32 @@ a:active {
     justify-content: center;
 }
 
+.footer-link li {
+    transform: scale(1);
+    transition: 0.4s;
+}
+
+.footer-link li:hover {
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
 .footer-link ul {
     width: 50vw;
     list-style-type: none;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+
+.footer-copyright {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 2vh;
+    text-align: center;
+}
+
+.footer-copyright img {
+    height: 4vh;
 }
