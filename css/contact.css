@@ -113,6 +113,7 @@ a:active {
 
 form {
     height: 50vh;
+    
 }
 
 #email {
@@ -171,10 +172,12 @@ form {
 
 .results {
     border-radius: 1vh;
+    background-color: #95dbe5;
     height: 60vh;
     width: 80vw;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
 

@@ -38,7 +38,7 @@
         <div class="title">
             <?php
             if ($mailSuccess === true) {
-                echo "<p>Sending success!</p><p>Please wait for a reply from me!</p>";
+                echo "<h2>Sending success!</h2><p>Please wait for a reply from me!</p>";
             } else {
                 echo "<p>Sending failed. Try again...</p>";
             }
