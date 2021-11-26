@@ -4,14 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact Me</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./public/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./public/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./public/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./public/favicon/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/contact.css">
 </head>
 <body>
+<div class="header">
+        <div class="logo">
+            <a href="./home.html">Eito's Blog</a>
+        </div>
+        <div class="navbar">
+            <div class="navbartab"><a href="./home.html">Home</a></div>
+            <div class="navbartab"><a href="./blog.html">My Blog</a></div>
+            <div class="navbartab"><a href="./about.html">About</a></div>
+            <div class="navbartab"><a href="./contact.html">Contact Me</a></div>
+        </div>
+    </div>
+    <?php
+    $email = $_POST['email'];
+    $name = $_POST['name'];
+    $subject = $_POST['subject'];
+    $message = $_POST['message'];
+    $mailmessage = $message." ".$email;
+    $mailSuccess = mail( "eito8.8okada@gmail.com", $subject, $mailmessage);
+    ?>
+    <div class="main">
+        <div class="title">
+            <?php
+            if ($mailSuccess === true) {
+                echo "<p>Sending success!</p><br><p>Please wait for a reply from me!</p>";
+            } else {
+                echo "<p>Sending failed. Try again...</p>";
+            }
+            ?>
+        </div>
+        <div class="results">
 <?php
-$email = $_POST['email'];
-$name = $_POST['name'];
-$subject = $_POST['subject'];
-$message = $_POST['message'];
 echo "<p>Your email: $email</p>";
 echo "<br>";
 echo "<p>Your name: $name</p>";
@@ -19,13 +53,8 @@ echo "<br>";
 echo "<p>Subject: $subject</p>";
 echo "<br>";
 echo "<p>Message: $message</p>";
-$message .=" ".$email;
-$mailSuccess = mail( "eito8.8okada@gmail.com", $subject, $message);
-if ($mailSuccess === true) {
-    echo "<p>Sending success!</p><br><p>Please wait for a reply from me!</p>";
-} else {
-    echo "<p>Sending failed. Try again...</p>";
-}
 ?>
+        </div>
+    </div>
 </body>
 </html>

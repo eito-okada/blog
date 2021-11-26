@@ -169,6 +169,10 @@ form {
     border-radius: 0.5vh;
 }
 
+.results {
+    background-color: #95dbe5;
+}
+
 .footer {
     position: sticky;
     top: 10vh;
