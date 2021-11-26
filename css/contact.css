@@ -170,7 +170,16 @@ form {
 }
 
 .results {
-    background-color: #95dbe5;
+    border-radius: 1vh;
+    height: 60vh;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.results p {
+    text-align: center;
 }
 
 .footer {

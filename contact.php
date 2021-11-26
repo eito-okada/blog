@@ -38,7 +38,7 @@
         <div class="title">
             <?php
             if ($mailSuccess === true) {
-                echo "<p>Sending success!</p><br><p>Please wait for a reply from me!</p>";
+                echo "<p>Sending success!</p><p>Please wait for a reply from me!</p>";
             } else {
                 echo "<p>Sending failed. Try again...</p>";
             }
@@ -46,13 +46,13 @@
         </div>
         <div class="results">
 <?php
-echo "<p>Your email: $email</p>";
+echo "<p>Your email:<br>$email</p>";
 echo "<br>";
-echo "<p>Your name: $name</p>";
+echo "<p>Your name:<br>$name</p>";
 echo "<br>";
-echo "<p>Subject: $subject</p>";
+echo "<p>Subject:<br>$subject</p>";
 echo "<br>";
-echo "<p>Message: $message</p>";
+echo "<p>Message:<br>$message</p>";
 ?>
         </div>
     </div>
