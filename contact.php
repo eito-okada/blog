@@ -56,7 +56,7 @@ echo "<p>Message:<br>$message</p>";
 ?>
         </div>
         <div class="bloglink">
-            <a href="./blog.html">Thank you. Have you read my blog?</a>
+            <a href="./blog.html">Thank you! Have you read my blog yet?</a>
         </div>
     </div>
 </body>
