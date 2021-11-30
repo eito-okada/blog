@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My blog</title>
+    <link rel="stylesheet" href="./css/blog.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="./public/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./public/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./public/favicon-16x16.png">
+    <link rel="manifest" href="./public/site.webmanifest">
 </head>
+
 <body>
     <div class="header">
         <div class="logo">
@@ -27,87 +30,87 @@
         </div>
     </div>
     <div class="main">
-    <div id="articles">
-        <div class="title">
-            <h2>Articles</h2>
-            <div class="articlesearch">
-                <input class="search" placeholder="Search articles..." />
-                <button class="sort" data-sort="date">
+        <div id="articles">
+            <div class="title">
+                <h2>Articles</h2>
+                <div class="articlesearch">
+                    <input class="search" placeholder="Search articles..." />
+                    <button class="sort" data-sort="date">
                     Sorting by: <span class="newest">newest</span><span class="oldest">oldest</span>
                 </button>
+                </div>
+                <p class="noresults"></p>
             </div>
-            <p class="noresults"></p>
-        </div>
-        <ul class="list">
-            <li class="post">
-                <div class="thumbnail9"></div>
-                <div class="description">
-                    <h3 class="name"><span class="tooltip" data-tooltip="New!">My ninth post</span></h3>
-                    <p class="date">12/3/21</p>
-                </div>
-            </li>
-            <li class="post">
-                <div class="thumbnail8"></div>
-                <div class="description">
-                    <h3 class="name">My eighth post</h3>
-                    <p class="date">12/2/21</p>
-                </div>
-            </li>
-            <li class="post">
-                <div class="thumbnail7"></div>
-                <div class="description">
-                    <h3 class="name">My seventh post</h3>
-                    <p class="date">12/1/21</p>
-                </div>
-            </li>
-            <li class="post">
-                <div class="thumbnail6"></div>
-                <div class="description">
-                    <h3 class="name">My sixth post</h3>
-                    <p class="date">11/30/21</p>
-                </div>
-            </li>
-            <li class="post">
-                <div class="thumbnail5"></div>
-                <div class="description">
-                    <h3 class="name">My fifth post</h3>
-                    <p class="date">11/29/21</p>
-                </div>
-            </li>
-            <li class="post">
-                <a href="">
-                    <div class="thumbnail4"></div>
+            <ul class="list">
+                <li class="post">
+                    <div class="thumbnail9"></div>
                     <div class="description">
-                        <h3 class="name">My forth post</h3>
-                        <p class="date">11/28/2021</p>
+                        <h3 class="name"><span class="tooltip" data-tooltip="New!">My ninth post</span></h3>
+                        <p class="date">12/3/21</p>
                     </div>
-                </a>
-            </li>
-            <li class="post">
-                <div class="thumbnail3"></div>
-                <div class="description">
-                    <h3 class="name">My third post</h3>
-                    <p class="date">11/27/2021</p>
-                </div>
-            </li>
-            <li class="post">
-                <div class="thumbnail2"></div>
-                <div class="description">
-                    <h3 class="name">My second post</h3>
-                    <p class="date">11/26/2021</p>
-                </div>
-            </li>
-            <li class="post">
-                <div class="thumbnail1"></div>
-                <div class="description">
-                    <h3 class="name">My first post</h3>
-                    <p class="date">11/25/2021</p>
-                </div>
-            </li>
-        </ul>
-        <ul class="pagination"></ul>
+                </li>
+                <li class="post">
+                    <div class="thumbnail8"></div>
+                    <div class="description">
+                        <h3 class="name">My eighth post</h3>
+                        <p class="date">12/2/21</p>
+                    </div>
+                </li>
+                <li class="post">
+                    <div class="thumbnail7"></div>
+                    <div class="description">
+                        <h3 class="name">My seventh post</h3>
+                        <p class="date">12/1/21</p>
+                    </div>
+                </li>
+                <li class="post">
+                    <div class="thumbnail6"></div>
+                    <div class="description">
+                        <h3 class="name">My sixth post</h3>
+                        <p class="date">11/30/21</p>
+                    </div>
+                </li>
+                <li class="post">
+                    <div class="thumbnail5"></div>
+                    <div class="description">
+                        <h3 class="name">My fifth post</h3>
+                        <p class="date">11/29/21</p>
+                    </div>
+                </li>
+                <li class="post">
+                    <a href="">
+                        <div class="thumbnail4"></div>
+                        <div class="description">
+                            <h3 class="name">My forth post</h3>
+                            <p class="date">11/28/2021</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="post">
+                    <div class="thumbnail3"></div>
+                    <div class="description">
+                        <h3 class="name">My third post</h3>
+                        <p class="date">11/27/2021</p>
+                    </div>
+                </li>
+                <li class="post">
+                    <div class="thumbnail2"></div>
+                    <div class="description">
+                        <h3 class="name">My second post</h3>
+                        <p class="date">11/26/2021</p>
+                    </div>
+                </li>
+                <li class="post">
+                    <div class="thumbnail1"></div>
+                    <div class="description">
+                        <h3 class="name">My first post</h3>
+                        <p class="date">11/25/2021</p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="pagination"></ul>
+        </div>
     </div>
-</div>
     <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
     <script src="./js/posts.js"></script>
 </body>
