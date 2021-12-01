@@ -1,0 +1,155 @@
+html,
+body {
+    margin: 0px;
+    font-family: "Roboto", sans-serif;
+    scroll-snap-type: y mandatory;
+    scroll-snap-stop: always;
+}
+
+p {
+    margin: 0px;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+a:active {
+    color: white;
+    text-decoration: none;
+}
+
+.mix-blend-mode body {
+    color: white;
+}
+
+.header {
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0px;
+    background-color: #1e3d58;
+    z-index: 1;
+}
+
+.logo {
+    font-size: 6vh;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+}
+
+.navbar {
+    display: flex;
+    height: 10vh;
+    width: 80vw;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbartab:hover {
+    mix-blend-mode: soft-light;
+}
+
+.footer {
+    position: sticky;
+    scroll-snap-align: end;
+    width: 100vw;
+    height: 90vh;
+    background-color: #43b0f1;
+}
+
+.footer-logo {
+    font-size: 6vh;
+    width: 100vw;
+    text-align: center;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 30vh;
+    transition-delay: 0s;
+}
+
+.footer-social {
+    position: relative;
+    width: 100vw;
+    top: 30vh;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-social ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    justify-content: space-evenly;
+    padding: 0px;
+    margin: 0px;
+}
+
+.footer-social img {
+    height: 5vh;
+    transform: scale(1);
+    transition: 0.4s;
+}
+
+.footer-social img:hover {
+    transform: scale(1.2);
+    transition: 0.4s;
+}
+
+.footer-link {
+    position: relative;
+    top: 35vh;
+    font-size: 4vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-link li {
+    transform: scale(1);
+    transition: 0.4s;
+}
+
+.footer-link li:hover {
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+.footer-link ul {
+    width: 50vw;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footer-copyright {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 2vh;
+    text-align: center;
+}
+
+.footer-copyright img {
+    height: 4vh;
+}

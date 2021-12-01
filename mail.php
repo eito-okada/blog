@@ -20,18 +20,18 @@
             <a href="./home.html">Eito's Blog</a>
         </div>
         <div class="navbar">
-            <div class="navbartab"><a href="./home.html">Home</a></div>
-            <div class="navbartab"><a href="./blog.html">My Blog</a></div>
-            <div class="navbartab"><a href="./about.html">About</a></div>
-            <div class="navbartab"><a href="./contact.html">Contact Me</a></div>
+            <div class="navbartab"><a href="./home">Home</a></div>
+            <div class="navbartab"><a href="./blog">My Blog</a></div>
+            <div class="navbartab"><a href="./about">About</a></div>
+            <div class="navbartab"><a href="./contact">Contact Me</a></div>
         </div>
     </div>
     <?php
-    $email = $_POST['email'];
-    $name = $_POST['name'];
-    $subject = $_POST['subject'];
-    $message = $_POST['message'];
-    $mailmessage = $message." ".$email;
+    $email = htmlspecialchars($_POST['email']);
+    $name = htmlspecialchars($_POST['name']);
+    $subject = htmlspecialchars($_POST['subject']);
+    $message = htmlspecialchars($_POST['message']);
+    $mailmessage = htmlspecialchars($message." ".$email);
     $mailSuccess = mail( "eito8.8okada@gmail.com", $subject, $mailmessage);
     ?>
     <div class="main">
@@ -56,7 +56,7 @@ echo "<p>Message:<br>$message</p>";
 ?>
         </div>
         <div class="bloglink">
-            <a href="./blog.html">Thank you! Have you read my blog yet?</a>
+            <a href="./blog">Thank you! Have you read my blog yet?</a>
         </div>
     </div>
 </body>
